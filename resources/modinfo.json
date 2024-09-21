@@ -1,11 +1,12 @@
 {
 	"type": "code",
-	"name": "Gourmand",
-	"modid": "gourmand",
+	"name": "Dump Json",
+	"modid": "dumpjson",
 	"version": "1.0.0",
+        "side": "Client",
 	
-	"description" : "Health buff for eating a greater variety of foods.",
-	"website": "https://github.com/bluelightning32/vs-gourmand",
+	"description" : "Dumps json assets on the client side for debugging.",
+	"website": "https://github.com/bluelightning32/vs-dumpjson",
 	"authors": [ "bluelightning32" ],
 	
 	"dependencies": {

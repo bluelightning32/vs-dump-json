@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../gourmand.csproj">
+    <ProjectReference Include="../dumpjson.csproj">
       <Targets>Build</Targets>
     </ProjectReference>
   </ItemGroup>

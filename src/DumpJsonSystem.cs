@@ -5,9 +5,9 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 
-namespace Gourmand;
+namespace DumpJson;
 
-public class GourmandSystem : ModSystem {
+public class DumpJsonSystem : ModSystem {
   private ICoreAPI _api;
   public override void Start(ICoreAPI api) {
     _api = api;

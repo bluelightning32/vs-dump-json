@@ -1,6 +1,6 @@
-# Gourmand Vintage Story Mod
+# Dump Json - Vintage Story Mod
 
-This mod gives the player a health buff after food diversity points are earned by eating foods that match food achievements.
+This mod is only used to add extra debug output for debugging other mods. It serializes the assets received by the server back into json in the Logs directory.
 
 ## Building
 
