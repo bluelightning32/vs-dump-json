@@ -1,0 +1,1 @@
+The assets folder must exist for the game to load when run through the debugger. Git does not support empty directories. So this file is here to make the directory non-empty.

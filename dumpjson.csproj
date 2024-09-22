@@ -63,6 +63,14 @@
             <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
             <Private>false</Private>
         </Reference>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="VintagestoryLib">
+            <HintPath>$(VINTAGE_STORY)/VintagestoryLib.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
 
         <!-- Import the JsonPeek Nuget package, because it provides the JsonPeek build task that is used later. -->
         <PackageReference Include="JsonPeek" Version="1.2.0" />
@@ -146,7 +154,7 @@
             commands in the game.
             -->
         <ItemGroup>
-            <ModInfo Include="resources/mod*" Exclude="resources/*.svg"/>
+            <ModInfo Include="resources/mod*" Exclude="resources/*.svg;ignore.txt"/>
         </ItemGroup>
         <Copy
             SourceFiles="@(Modinfo)"
