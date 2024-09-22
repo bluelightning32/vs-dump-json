@@ -118,7 +118,8 @@ public class DumpJsonSystem : ModSystem {
       throw new ArgumentException(
           $"Found a code that cannot be safely turned into a path: {code}");
     }
-    FileInfo file = new(Path.Combine(folder, code));
+    FileInfo file =
+        new(Path.Combine(folder, Path.ChangeExtension(code, ".json")));
     DirectoryInfo folderInfo = new(folder);
     DirectoryInfo parent = file.Directory;
     // Verify the combined path uses folder as an ancestor.
