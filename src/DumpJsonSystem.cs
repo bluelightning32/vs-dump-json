@@ -61,11 +61,7 @@ public class DumpJsonSystem : ModSystem {
 
     JsonSerializer serializer =
         new() { Formatting = Formatting.Indented,
-                ContractResolver = new DefaultContractResolver() {
-                  NamingStrategy =
-                      new CamelCaseNamingStrategy() { OverrideSpecifiedNames =
-                                                          false }
-                } };
+                ContractResolver = new IgnoreFieldsResolver("size") };
 
     string blocksPath = Path.Combine(dumpPath, "blocks");
     if (!Directory.Exists(blocksPath)) {

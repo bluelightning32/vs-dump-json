@@ -2,7 +2,7 @@
 	"type": "code",
 	"name": "Dump Json",
 	"modid": "dumpjson",
-	"version": "1.0.0",
+	"version": "1.0.1",
         "side": "Client",
 	
 	"description" : "Dumps json assets on the client side for debugging.",
@@ -10,6 +10,6 @@
 	"authors": [ "bluelightning32" ],
 	
 	"dependencies": {
-		"game": "1.19.8"
+		"game": "1.22.2"
 	}
 }
